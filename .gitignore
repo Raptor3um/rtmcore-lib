@@ -16,8 +16,8 @@ report
 .DS_Store
 
 
-ravencore.js
-ravencore.min.js
-ravencore.js.sig
-ravencore.min.js.sig
+rtmcore.js
+rtmcore.min.js
+rtmcore.js.sig
+rtmcore.min.js.sig
 tests.js
