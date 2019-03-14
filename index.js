@@ -1,70 +1,70 @@
 'use strict';
 
-var ravencore = module.exports;
+var rtmcore = module.exports;
 
 // module information
-ravencore.version = 'v' + require('./package.json').version;
-ravencore.versionGuard = function(version) {
+rtmcore.version = 'v' + require('./package.json').version;
+rtmcore.versionGuard = function(version) {
   if (version !== undefined) {
-    var message = 'More than one instance of ravencore-lib found. ' +
-      'Please make sure to require ravencore-lib and check that submodules do' +
-      ' not also include their own ravencore-lib dependency.';
+    var message = 'More than one instance of rtmcore-lib found. ' +
+      'Please make sure to require rtmcore-lib and check that submodules do' +
+      ' not also include their own rtmcore-lib dependency.';
     throw new Error(message);
   }
 };
-ravencore.versionGuard(global._ravencore);
-global._ravencore = ravencore.version;
+rtmcore.versionGuard(global._rtmcore);
+global._rtmcore = rtmcore.version;
 
 // crypto
-ravencore.crypto = {};
-ravencore.crypto.BN = require('./lib/crypto/bn');
-ravencore.crypto.ECDSA = require('./lib/crypto/ecdsa');
-ravencore.crypto.Hash = require('./lib/crypto/hash');
-ravencore.crypto.Random = require('./lib/crypto/random');
-ravencore.crypto.Point = require('./lib/crypto/point');
-ravencore.crypto.Signature = require('./lib/crypto/signature');
+rtmcore.crypto = {};
+rtmcore.crypto.BN = require('./lib/crypto/bn');
+rtmcore.crypto.ECDSA = require('./lib/crypto/ecdsa');
+rtmcore.crypto.Hash = require('./lib/crypto/hash');
+rtmcore.crypto.Random = require('./lib/crypto/random');
+rtmcore.crypto.Point = require('./lib/crypto/point');
+rtmcore.crypto.Signature = require('./lib/crypto/signature');
 
 // encoding
-ravencore.encoding = {};
-ravencore.encoding.Base58 = require('./lib/encoding/base58');
-ravencore.encoding.Base58Check = require('./lib/encoding/base58check');
-ravencore.encoding.BufferReader = require('./lib/encoding/bufferreader');
-ravencore.encoding.BufferWriter = require('./lib/encoding/bufferwriter');
-ravencore.encoding.Varint = require('./lib/encoding/varint');
+rtmcore.encoding = {};
+rtmcore.encoding.Base58 = require('./lib/encoding/base58');
+rtmcore.encoding.Base58Check = require('./lib/encoding/base58check');
+rtmcore.encoding.BufferReader = require('./lib/encoding/bufferreader');
+rtmcore.encoding.BufferWriter = require('./lib/encoding/bufferwriter');
+rtmcore.encoding.Varint = require('./lib/encoding/varint');
 
 // utilities
-ravencore.util = {};
-ravencore.util.buffer = require('./lib/util/buffer');
-ravencore.util.js = require('./lib/util/js');
-ravencore.util.preconditions = require('./lib/util/preconditions');
+rtmcore.util = {};
+rtmcore.util.buffer = require('./lib/util/buffer');
+rtmcore.util.js = require('./lib/util/js');
+rtmcore.util.preconditions = require('./lib/util/preconditions');
 
 // errors thrown by the library
-ravencore.errors = require('./lib/errors');
+rtmcore.errors = require('./lib/errors');
 
-// main ravencoin library
-ravencore.Address = require('./lib/address');
-ravencore.Block = require('./lib/block');
-ravencore.MerkleBlock = require('./lib/block/merkleblock');
-ravencore.BlockHeader = require('./lib/block/blockheader');
-ravencore.HDPrivateKey = require('./lib/hdprivatekey.js');
-ravencore.HDPublicKey = require('./lib/hdpublickey.js');
-ravencore.Networks = require('./lib/networks');
-ravencore.Opcode = require('./lib/opcode');
-ravencore.PrivateKey = require('./lib/privatekey');
-ravencore.PublicKey = require('./lib/publickey');
-ravencore.Script = require('./lib/script');
-ravencore.Transaction = require('./lib/transaction');
-ravencore.URI = require('./lib/uri');
-ravencore.Unit = require('./lib/unit');
+// main raptoreum library
+rtmcore.Address = require('./lib/address');
+rtmcore.Block = require('./lib/block');
+rtmcore.MerkleBlock = require('./lib/block/merkleblock');
+rtmcore.BlockHeader = require('./lib/block/blockheader');
+rtmcore.HDPrivateKey = require('./lib/hdprivatekey.js');
+rtmcore.HDPublicKey = require('./lib/hdpublickey.js');
+rtmcore.Networks = require('./lib/networks');
+rtmcore.Opcode = require('./lib/opcode');
+rtmcore.PrivateKey = require('./lib/privatekey');
+rtmcore.PublicKey = require('./lib/publickey');
+rtmcore.Script = require('./lib/script');
+rtmcore.Transaction = require('./lib/transaction');
+rtmcore.URI = require('./lib/uri');
+rtmcore.Unit = require('./lib/unit');
 
 // dependencies, subject to change
-ravencore.deps = {};
-ravencore.deps.bnjs = require('bn.js');
-ravencore.deps.bs58 = require('bs58');
-ravencore.deps.Buffer = Buffer;
-ravencore.deps.elliptic = require('elliptic');
-ravencore.deps.nodeX16r = require('node-x16r');
-ravencore.deps._ = require('lodash');
+rtmcore.deps = {};
+rtmcore.deps.bnjs = require('bn.js');
+rtmcore.deps.bs58 = require('bs58');
+rtmcore.deps.Buffer = Buffer;
+rtmcore.deps.elliptic = require('elliptic');
+rtmcore.deps.nodeX16r = require('node-x16r');
+rtmcore.deps._ = require('lodash');
 
 // Internal usage, exposed for testing/advanced tweaking
-ravencore.Transaction.sighash = require('./lib/transaction/sighash');
+rtmcore.Transaction.sighash = require('./lib/transaction/sighash');

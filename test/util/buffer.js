@@ -4,9 +4,9 @@
 var should = require('chai').should();
 var expect = require('chai').expect;
 
-var ravencore = require('../..');
-var errors = ravencore.errors;
-var BufferUtil = ravencore.util.buffer;
+var rtmcore = require('../..');
+var errors = rtmcore.errors;
+var BufferUtil = rtmcore.util.buffer;
 
 describe('buffer utils', function() {
 

@@ -2,14 +2,14 @@
 
 var _ = require('lodash');
 var should = require('chai').should();
-var ravencore = require('../..');
-var BN = ravencore.crypto.BN;
-var Signature = ravencore.crypto.Signature;
-var JSUtil = ravencore.util.js;
-var Interpreter = ravencore.Script.Interpreter;
+var rtmcore = require('../..');
+var BN = rtmcore.crypto.BN;
+var Signature = rtmcore.crypto.Signature;
+var JSUtil = rtmcore.util.js;
+var Interpreter = rtmcore.Script.Interpreter;
 
-var sig_canonical = require('../data/ravend/sig_canonical');
-var sig_noncanonical = require('../data/ravend/sig_noncanonical');
+var sig_canonical = require('../data/raptoreumd/sig_canonical');
+var sig_noncanonical = require('../data/raptoreumd/sig_noncanonical');
 
 describe('Signature', function() {
 
@@ -251,7 +251,7 @@ describe('Signature', function() {
     });
 
 
-    describe('ravend fixtures', function() {
+    describe('raptoreumd fixtures', function() {
       var test_sigs = function(set, expected) {
         var i = 0;
         set.forEach(function(vector) {

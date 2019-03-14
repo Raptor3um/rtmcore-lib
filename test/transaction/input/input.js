@@ -4,13 +4,13 @@ var should = require('chai').should();
 var expect = require('chai').expect;
 var _ = require('lodash');
 
-var ravencore = require('../../..');
-var errors = ravencore.errors;
-var PrivateKey = ravencore.PrivateKey;
-var Address = ravencore.Address;
-var Script = ravencore.Script;
-var Networks = ravencore.Networks;
-var Input = ravencore.Transaction.Input;
+var rtmcore = require('../../..');
+var errors = rtmcore.errors;
+var PrivateKey = rtmcore.PrivateKey;
+var Address = rtmcore.Address;
+var Script = rtmcore.Script;
+var Networks = rtmcore.Networks;
+var Input = rtmcore.Transaction.Input;
 
 describe('Transaction.Input', function() {
 

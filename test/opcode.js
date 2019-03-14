@@ -4,8 +4,8 @@ var _ = require('lodash');
 var chai = require('chai');
 var should = chai.should();
 var expect = chai.expect;
-var ravencore = require('..');
-var Opcode = ravencore.Opcode;
+var rtmcore = require('..');
+var Opcode = rtmcore.Opcode;
 
 describe('Opcode', function() {
 

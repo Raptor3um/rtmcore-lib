@@ -5,13 +5,13 @@ var should = require('chai').should();
 var expect = require('chai').expect;
 var _ = require('lodash');
 
-var ravencore = require('../../..');
-var Transaction = ravencore.Transaction;
-var PrivateKey = ravencore.PrivateKey;
-var Address = ravencore.Address;
-var Script = ravencore.Script;
-var Networks = ravencore.Networks;
-var Signature = ravencore.crypto.Signature;
+var rtmcore = require('../../..');
+var Transaction = rtmcore.Transaction;
+var PrivateKey = rtmcore.PrivateKey;
+var Address = rtmcore.Address;
+var Script = rtmcore.Script;
+var Networks = rtmcore.Networks;
+var Signature = rtmcore.crypto.Signature;
 
 describe('PublicKeyHashInput', function() {
 

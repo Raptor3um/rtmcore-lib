@@ -1,18 +1,18 @@
 {
-  "name": "ravencore-lib",
-  "main": "./ravencore-lib.min.js",
+  "name": "rtmcore-lib",
+  "main": "./rtmcore-lib.min.js",
   "version": "1.0.0",
-  "homepage": "https://github.com/underdarkskies",
+  "homepage": "https://github.com/Raptor3um",
   "authors": [
     "Under"
   ],
-  "description": "A pure, powerful core for your ravencoin project.",
+  "description": "A pure, powerful core for your raptoreum project.",
   "moduleType": [
     "globals"
   ],
   "keywords": [
-    "ravencoin",
-    "ravencore",
+    "raptoreum",
+    "rtmcore",
     "rvn",
     "satoshi"
   ],

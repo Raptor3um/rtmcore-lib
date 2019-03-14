@@ -1,10 +1,10 @@
 'use strict';
 
 var should = require('chai').should();
-var ravencore = require('../..');
-var BufferWriter = ravencore.encoding.BufferWriter;
-var BufferReader = ravencore.encoding.BufferReader;
-var BN = ravencore.crypto.BN;
+var rtmcore = require('../..');
+var BufferWriter = rtmcore.encoding.BufferWriter;
+var BufferReader = rtmcore.encoding.BufferReader;
+var BN = rtmcore.crypto.BN;
 
 describe('BufferReader', function() {
 

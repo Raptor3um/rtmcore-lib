@@ -3,13 +3,13 @@
 var should = require('chai').should();
 var expect = require('chai').expect;
 
-var ravencore = require('..');
-var Point = ravencore.crypto.Point;
-var BN = ravencore.crypto.BN;
-var PublicKey = ravencore.PublicKey;
-var PrivateKey = ravencore.PrivateKey;
-var Address = ravencore.Address;
-var Networks = ravencore.Networks;
+var rtmcore = require('..');
+var Point = rtmcore.crypto.Point;
+var BN = rtmcore.crypto.BN;
+var PublicKey = rtmcore.PublicKey;
+var PrivateKey = rtmcore.PrivateKey;
+var Address = rtmcore.Address;
+var Networks = rtmcore.Networks;
 
 /* jshint maxlen: 200 */
 
